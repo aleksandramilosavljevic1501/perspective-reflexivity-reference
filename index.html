@@ -1,101 +1,564 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Conference Template">
-    <meta name="resource-type" content="document">
-    <meta name="distribution" content="global">
-    <meta name="KeyWords" content="Conference">
-    <title>Conference Template</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css">
+
+    <meta name="description"
+          content="Perspective on Reflexivity and Reference: Between Grammar and Discourse. Academic workshop at the University of Graz, 3–4 June 2027.">
+
+    <meta name="keywords"
+          content="reflexivity, reference, logophoricity, perspective, discourse, binding, linguistics, University of Graz">
+
+    <title>Perspective on Reflexivity and Reference | Graz 2027</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            scroll-margin-top: 25px;
+        }
+
+        .workshop-subtitle {
+            font-style: italic;
+            font-size: 1.15em;
+            color: #555;
+        }
+
+        .workshop-info {
+            margin: 25px 0;
+            padding: 15px 20px;
+            background: #f5f5f5;
+            border-left: 4px solid #555;
+        }
+
+        .workshop-info p {
+            margin: 6px 0;
+        }
+
+        .speaker {
+            margin: 20px 0;
+            padding: 15px 20px;
+            background: #f7f7f7;
+        }
+
+        .speaker h3 {
+            margin-top: 0;
+        }
+
+        .topic-list li {
+            margin-bottom: 12px;
+        }
+
+        .dates-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0 25px;
+        }
+
+        .dates-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dates-table td:first-child {
+            font-weight: bold;
+        }
+
+        .reference-list li {
+            margin-bottom: 10px;
+        }
+
+        .small-note {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
 
+    <!-- WORKSHOP BANNER -->
+
     <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+        <img src="assets/banner.jpg"
+             alt="Workshop banner">
+
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+            <span class="title1">Perspective</span>
+            <span class="title2">on Reflexivity and Reference</span>
+            <span class="year">2027</span>
         </div>
+
         <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
+            3–4 June 2027 (provisional)<br>
+            University of Graz, Austria
         </div>
     </div>
+
+
+    <!-- NAVIGATION -->
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">Home</a>
+                <a class="current" href="#home">Home</a>
             </td>
             <td class="navigation">
-                <a title="Register for the Conference" href="registration">Registration</a>
+                <a href="#call">Call for Papers</a>
             </td>
             <td class="navigation">
-                <a title="Conference Program" href="program">Program</a> 
+                <a href="#speaker">Invited Speaker</a>
             </td>
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a href="#program">Program</a>
             </td>
             <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
+                <a href="#venue">Venue</a>
+            </td>
+            <td class="navigation">
+                <a href="#organizers">Organizers</a>
             </td>
         </tr>
     </table>
 
-    <h2>What is This Website?</h2>
-    <p>
-        This website is a template that you could use for a (small) academic conference. 
-        It&rsquo;s got a page for registration, where you can embed a Google Form or some other way for participants to register.
-        It&rsquo;s got a program page to list the schedule for the conference.
-        It&rsquo;s got a directions page to add a bunch of instructions how to get to the conference.
-        It&rsquo;s got a page to put up the flyers and other promotional materials for folks to download.
-    </p>
-    <p>
-        You can use this template by cloning all the files from this
-        <a target="_blank" href="https://github.com/mikepierce/conference-website-template">GitHub repo here</a>.
-        This template was created from a website I made for 
-        <a target="_blank" href="http://math.ucr.edu/~mathconn/">MathConnections 2019</a>,
-        in case you want to see an example of this template being used in the wild.
-    </p>
-    <p>
-        This paragraph is just some filler text to give the homepage some volume:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-    </p>
 
-    <h2>Organizers</h2>
-    <p>
-        Here&rsquo;s a good place to list the organizers and sponsors of the conference,
-        as well as list contact information for the organizers,
-        and show off the logos of the sponsors.
-        It looks like his conference was sponsored by kittens!
-    </p>
-    <table class="sponsors">
-        <tr>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten1.jpg" alt="First Sponsor Name">
+    <!-- HOME / WORKSHOP DESCRIPTION -->
+
+    <section id="home">
+
+        <h2>Perspective on Reflexivity and Reference:
+            Between Grammar and Discourse</h2>
+
+        <div class="workshop-info">
+            <p><strong>Dates:</strong> 3–4 June 2027 (provisional)</p>
+            <p><strong>Location:</strong> University of Graz, Austria</p>
+            <p><strong>Invited Speaker:</strong> Elsi Kaiser
+               (University of Southern California)</p>
+        </div>
+
+        <h2>Workshop Description</h2>
+
+        <p>
+            The relationship between grammatical structure and
+            discourse interpretation raises fundamental questions
+            about how referential dependencies are established and
+            interpreted. While traditional approaches to binding
+            and anaphora have emphasized structural configurations
+            and locality conditions, a substantial body of research
+            has demonstrated that the distribution and interpretation
+            of reflexive and referential expressions may also be
+            sensitive to discourse-related factors, including
+            prominence, accessibility, perspective, and information
+            structure (Sells 1987; Zribi-Hertz 1989;
+            König &amp; Siemund 2000; Kaiser et al. 2009;
+            Charnavel 2021; Lyu &amp; Kaiser 2024).
+        </p>
+
+        <p>
+            This workshop aims to investigate
+            <strong>the interaction between grammatical structure
+            and discourse in the establishment and interpretation
+            of reflexive and referential dependencies, with particular
+            attention to the role of perspective.</strong>
+            A central question is how structural, semantic, and
+            discourse-related constraints interact in determining
+            the distribution, interpretation, and processing of
+            linguistic expressions. Discourse configurations may
+            make alternative referents, antecedents, or perspective
+            holders available, while grammatical mechanisms may
+            constrain their accessibility, licensing, and
+            interpretation. Conversely, grammatical expressions
+            may themselves contribute to discourse organization
+            by identifying referents, establishing perspective
+            relations, or constraining contextually available
+            interpretations.
+        </p>
+
+        <p>
+            These interactions raise broader theoretical questions
+            about <strong>whether and how discourse-related
+            information is represented in grammar.</strong>
+            To what extent are reflexive and referential dependencies
+            determined by dedicated grammatical features,
+            representations, and structural configurations?
+            Which aspects of their interpretation depend on
+            discourse prominence, perspective-taking, information
+            structure, or pragmatic inference? How do these
+            different sources of information interact during
+            real-time language processing? Furthermore, what can
+            the morphological and interpretive connections
+            between reflexives, pronouns, and intensifiers reveal
+            about the relationship between grammatical
+            representation and discourse interpretation?
+        </p>
+
+        <p>
+            By bringing together research from syntax, semantics,
+            pragmatics, morphology, and psycholinguistics, the
+            workshop seeks to advance our understanding of
+            <strong>how grammatical structure and discourse
+            interact in shaping reflexivity, reference, and
+            perspective-sensitive interpretation.</strong>
+            Contributions employing formal-theoretical,
+            experimental, corpus-based, descriptive, and
+            crosslinguistic approaches are welcome, whether
+            they investigate individual phenomena or explore
+            connections between them.
+        </p>
+
+    </section>
+
+
+    <!-- CALL FOR PAPERS -->
+
+    <section id="call">
+
+        <h2>Call for Papers</h2>
+
+        <p>
+            We invite submissions for presentations addressing
+            the relationship between grammatical structure,
+            discourse, reflexivity, reference, and perspective.
+        </p>
+
+        <h3>Topics of Interest</h3>
+
+        <p>
+            We welcome contributions addressing, but not
+            limited to, the following topics:
+        </p>
+
+        <ul class="topic-list">
+
+            <li>
+                <strong>Reflexivity and binding:</strong>
+                Local and long-distance reflexivity, exempt
+                anaphora, structural and nonstructural binding,
+                reflexivization, and argument structure.
+            </li>
+
+            <li>
+                <strong>Logophoricity and perspective:</strong>
+                Logophoric pronouns and anaphors, perspective
+                holders, perspective shifting, empathy,
+                attitude reports, indexicality, and
+                <em>de se</em> interpretation.
+            </li>
+
+            <li>
+                <strong>Reference and coreference:</strong>
+                Pronominal interpretation, antecedent
+                accessibility, discourse prominence,
+                referential dependencies, and the interaction
+                between grammatical features and discourse
+                referents.
+            </li>
+
+            <li>
+                <strong>Discourse and grammatical dependencies:</strong>
+                Information structure, contrast, contextual
+                alternatives, and the role of discourse
+                configurations in licensing and interpreting
+                reflexive and referential expressions.
+            </li>
+
+            <li>
+                <strong>Reflexivity, intensification, and
+                morphological multifunctionality:</strong>
+                Formal and interpretive connections between
+                reflexives, pronouns, and intensifiers,
+                including emphatic and contrastive effects.
+            </li>
+
+            <li>
+                <strong>Experimental and processing perspectives:</strong>
+                The interaction of structural, semantic,
+                and discourse-related constraints in anaphora
+                resolution, perspective-taking, and
+                referential interpretation.
+            </li>
+
+            <li>
+                <strong>Crosslinguistic variation and
+                grammatical representation:</strong>
+                Variation in reflexive, logophoric, and
+                referential systems and its implications
+                for theories of grammar and discourse.
+            </li>
+
+        </ul>
+
+        <p>
+            Contributions may focus on reflexivity, reference,
+            perspective, or the connections between them.
+            The workshop welcomes different theoretical
+            perspectives, with particular interest in research
+            that clarifies the respective contributions of
+            grammatical structure and discourse to linguistic
+            interpretation.
+        </p>
+
+
+        <h3>Abstract Submission</h3>
+
+        <p>
+            Abstracts are invited for 20-minute presentations
+            followed by 10 minutes of discussion.
+        </p>
+
+        <p>
+            Abstracts should be anonymous, written in English,
+            and no longer than two A4 pages, including
+            examples, figures, and references.
+            Please use 12-point font and standard margins.
+        </p>
+
+        <p>
+            <strong>Submission platform:</strong>
+            To be announced.
+        </p>
+
+
+        <h3>Important Dates</h3>
+
+        <table class="dates-table">
+            <tr>
+                <td>Abstract submission deadline</td>
+                <td>To be announced</td>
+            </tr>
+            <tr>
+                <td>Notification of acceptance</td>
+                <td>To be announced</td>
+            </tr>
+            <tr>
+                <td>Workshop</td>
+                <td>3–4 June 2027 (provisional)</td>
+            </tr>
+        </table>
+
+    </section>
+
+
+    <!-- INVITED SPEAKER -->
+
+    <section id="speaker">
+
+        <h2>Invited Speaker</h2>
+
+        <div class="speaker">
+
+            <h3>
+                <a href="https://elsikaiser.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    Elsi Kaiser
                 </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten2.jpg" alt="Second Sponsor Name" style="width: 80%">
+            </h3>
+
+            <p>
+                <strong>University of Southern California, USA</strong>
+            </p>
+
+            <p>
+                Elsi Kaiser's research investigates language
+                processing and interpretation, with particular
+                emphasis on anaphora, reference resolution,
+                perspective-taking, and the interaction
+                between grammatical and discourse-related
+                constraints.
+            </p>
+
+            <p>
+                Her research on reflexive and pronominal
+                interpretation, logophoricity, and
+                perspective-sensitive expressions is
+                particularly relevant to the workshop's
+                central themes.
+            </p>
+
+            <p>
+                <strong>Invited talk:</strong>
+                Title and abstract to be announced.
+            </p>
+
+            <p>
+                <a href="https://elsikaiser.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    Personal website
                 </a>
-            </td>
-            <td class="sponsor">
-                <a href="http://www.eyebleach.me/">
-                    <img src="assets/kitten3.jpg" alt="Third Sponsor Name">
-                </a>
-            </td>
-        </tr>
-    </table>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRAM -->
+
+    <section id="program">
+
+        <h2>Workshop Program</h2>
+
+        <p>
+            The workshop will take place over two days
+            at the University of Graz.
+        </p>
+
+        <p>
+            The detailed program, including presentation
+            titles and abstracts, will be published
+            after the acceptance notifications.
+        </p>
+
+        <p><em>Program to be announced.</em></p>
+
+    </section>
+
+
+    <!-- VENUE -->
+
+    <section id="venue">
+
+        <h2>Venue and Travel</h2>
+
+        <p>
+            The workshop will be hosted by the
+            <strong>University of Graz</strong>,
+            Graz, Austria.
+        </p>
+
+        <p>
+            Information about the workshop room,
+            accommodation, local transportation,
+            and travel to Graz will be provided
+            closer to the event.
+        </p>
+
+        <p>
+            <a href="https://www.uni-graz.at/en/"
+               target="_blank" rel="noopener noreferrer">
+                University of Graz
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- ORGANIZERS -->
+
+    <section id="organizers">
+
+        <h2>Organizers</h2>
+
+        <p>
+            <strong>Boban Arsenijević</strong><br>
+            <strong>Aleksandra Milosavljević</strong><br>
+            <strong>Joeri Vinke</strong>
+        </p>
+
+        <p>
+            University of Graz, Austria
+        </p>
+
+        <h3>Institutional Context</h3>
+
+        <p>
+            The workshop is organized in the research
+            environment of the University of Graz
+            and is thematically connected to the
+            Special Research Area
+            <em>Language between Redundancy and Deficiency</em>
+            (ReDeFi).
+        </p>
+
+        <p>
+            <a href="https://sfb-redundancy-deficiency.uni-graz.at/de/"
+               target="_blank" rel="noopener noreferrer">
+                SFB ReDeFi website
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- REFERENCES -->
+
+    <section id="references">
+
+        <h2>Selected References</h2>
+
+        <ul class="reference-list">
+
+            <li>
+                Charnavel, Isabelle. 2021.
+                Logophoricity, perspective, and reflexives.
+                <em>Annual Review of Linguistics</em>
+                7. 131–155.
+            </li>
+
+            <li>
+                Kaiser, Elsi, Jeffrey T. Runner,
+                Rachel S. Sussman &amp; Michael K. Tanenhaus.
+                2009. Structural and semantic constraints
+                on the resolution of pronouns and reflexives.
+                <em>Cognition</em> 112(1). 55–80.
+            </li>
+
+            <li>
+                König, Ekkehard &amp; Peter Siemund. 2000.
+                Locally free self-forms, logophoricity,
+                and intensification in English.
+                <em>English Language &amp; Linguistics</em>
+                4(2). 183–204.
+            </li>
+
+            <li>
+                Lyu, Jun &amp; Elsi Kaiser. 2024.
+                Logophoricity and the processing of
+                Chinese reflexives.
+                <em>Journal of East Asian Linguistics</em>
+                33(4). 559–597.
+            </li>
+
+            <li>
+                Sells, Peter. 1987.
+                Aspects of logophoricity.
+                <em>Linguistic Inquiry</em>
+                18(3). 445–479.
+            </li>
+
+            <li>
+                Zribi-Hertz, Anne. 1989.
+                Anaphor binding and narrative point of view:
+                English reflexive pronouns in sentence
+                and discourse.
+                <em>Language</em> 65(4). 695–727.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- FOOTER -->
 
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+        &copy; 2027 Workshop Organizers,
+        University of Graz
+        &nbsp;|&nbsp;
+        Design based on
+        <a href="https://github.com/mikepierce/conference-website-template">
+            Mike Pierce's Conference Website Template
+        </a>
     </footer>
 
 </body>
 </html>
-
